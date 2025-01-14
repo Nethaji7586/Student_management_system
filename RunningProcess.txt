@@ -1,0 +1,43 @@
+Process to run
+
+*download the zip
+
+*right click and extract the folder
+
+*after extraction open the folder in eclipse
+
+*right click the Smanagement under the referenced libraries
+
+*go to build path then click use as source folder
+
+*After that open the Smanagement/src
+
+*In that src Smanagement.java file is there open it and add your MySQL password in the empty fields
+-------------------------------------------------------------------------------------------
+ static final String PASSWORD = "your password";
+-------------------------------------------------------------------------------------------
+like this.
+
+
+**Then open the MySQL paste this comments and run
+
+
+-------------------------------------------------------------------------------------------
+CREATE DATABASE StudentManagement;
+USE StudentManagement;
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,     -- Auto-incrementing primary key
+    name VARCHAR(100) NOT NULL,            -- Student's name
+    marks INT DEFAULT 0,                   -- Student's marks (default is 0)
+    username VARCHAR(50) UNIQUE NOT NULL,  -- Unique username for login
+    password VARCHAR(50) NOT NULL          -- Password for login
+);
+
+INSERT INTO students (name, marks, username, password)
+VALUES 
+('John Doe', 85, 'john', 'password123'),
+('Jane Smith', 90, 'jane', 'mypassword'),
+('Mark Lee', 70, 'mark', 'mark2023');
+-------------------------------------------------------------------------------------------
+
+after this open the eclipse and run your project using the run button
