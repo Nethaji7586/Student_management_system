@@ -12,7 +12,7 @@ public class SManagement {
     
     static final String URL = "jdbc:mysql://localhost:3306/StudentManagement";
     static final String USER = "root";
-    static final String PASSWORD = "nethaji123";
+    static final String PASSWORD = "";
 
     
     private static Connection conn;
