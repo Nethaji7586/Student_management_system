@@ -6,7 +6,7 @@ Process to run
 
 *after extraction open the folder in eclipse
 
-*right click the Smanagement under the referenced libraries
+*right click the resources folder 
 
 *go to build path then click use as source folder
 
